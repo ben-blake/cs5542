@@ -1,9 +1,13 @@
 # Lab 2 — Advanced RAG Results (CS 5542)
 
-> **Course:** CS 5542 — Big Data Analytics and Apps  
-> **Lab:** Advanced RAG Systems Engineering  
+> **Course:** CS 5542 — Big Data Analytics and Apps
+> 
+> **Lab:** Advanced RAG Systems Engineering
+> 
 > **Student Name:** Ben Blake
+> 
 > **GitHub Username:** ben-blake
+> 
 > **Date:** Jan 29, 2026
 
 ---
