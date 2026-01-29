@@ -55,6 +55,13 @@
 ### Design Rationale
 I chose **Semantic Chunking** over fixed windows because historical narratives rely on complete paragraphs to maintain the context of a story (e.g., the full story of Kaldi). **Hybrid Retrieval** was essential because some queries (Q2) rely heavily on specific proper names (De Clieu) best caught by BM25, while others (Q1) benefit from the semantic understanding of "origin legend" via vectors. **Re-ranking** was applied to the top 20 candidates to filter out "keyword-heavy but semantically irrelevant" chunks before generation.
 
+### System Screenshots
+**Chunking Comparison:**
+![Chunking Comparison](screenshots/chunking_comparison.png)
+
+**Re-ranking Before vs. After:**
+![Re-ranking Comparison](screenshots/reranking_before_after.png)
+
 ---
 
 ## 4. Results
@@ -80,9 +87,12 @@ I chose **Semantic Chunking** over fixed windows because historical narratives r
 ## 6. Evidence of Grounding
 
 > **Answer:**  
-> According to the legend, coffee was discovered by an Ethiopian goat herder named **Kaldi**, who lived around the 9th century. He noticed his goats became energetic after eating red berries. He reported this to a local abbot, who made a drink from the berries and found it kept him alert during prayers.
+>  Once planted, the seedling not only thrived, but it's credited with the spread of over 18 million coffee trees on the island of Martinique in the next 50 years. Even more incredible is that this seedling was the parent of all coffee trees throughout the Caribbean, South and Central America.
 >  
-> **Citations:** [Chunk 131] (The Legend of Kaldi...)
+> **Citations:** [Chunk 121]
+
+**Prompt-only vs. RAG-grounded Comparison:**
+![RAG Comparison](screenshots/rag_vs_prompt_only.png)
 
 ---
 
