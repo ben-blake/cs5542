@@ -57,6 +57,7 @@ I chose **Semantic Chunking** over fixed windows because historical narratives r
 
 ### System Screenshots
 **Chunking Comparison:**
+
 ![Chunking Comparison](screenshots/chunking_comparison.png)
 
 **Re-ranking Before vs. After:**
