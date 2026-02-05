@@ -74,13 +74,25 @@ We implemented a Full-Stack Multimodal RAG pipeline with the following component
 ### Query 1 Example
 **Question:** "Based on the risk matrix shown in the figures and the accompanying text, which combination of likelihood and impact corresponds to the highest risk level?"
 
-**Retrieved Evidence (Hybrid + Rerank):**
-- `[IMAGE | img1.png | score=2.103] caption=img1`
-- `[TEXT | doc3.pdf::p16 | score=1.854] Preparing to create and use Organizational Profiles...`
+**Grounded Answer (Extractive Baseline):**
+> [TEXT | doc1.pdf::p11::c4500 | score=-6.947]  for which a health care facility or business associate, as applicable, determines there is a low probability of compromise in accordance with HIPAA’s 4-factor risk assessment (see “Analysis of Risk of Harm” section below for a complete listing of these facto
+> Images: ['img1.png', 'img10.png', 'img2.png']
+
+### Query 2 Example
+**Question:** "Using both the Zero Trust architecture diagram and the document text, what core principle is emphasized for access decisions?"
 
 **Grounded Answer (Extractive Baseline):**
-> [TEXT | doc3.pdf::p16 | score=1.854] Preparing to create and use Organizational Profiles involves gathering information about organizational priorities, resources, and risk direction from executives.
-> [IMAGE | img1.png | score=2.103] caption=img1
+> [TEXT | doc4.pdf::p45::c0 | score=0.097] 45 where they can be securely communicated to a platform. The foundational building block that zero trust architecture usually consists of several aspects: • Each entity can create proof of whom the identity is • Entities can independently authenticate other i
+> [TEXT | doc4.pdf::p44::c1500 | 
+> Images: ['img1.png', 'img2.png', 'img10.png']
+
+### Query 3 Example
+**Question:** "What specific encryption algorithm (for example, AES-256 or RSA-2048) is mandated by the organization’s policy?"
+
+**Grounded Answer (Extractive Baseline):**
+> [TEXT | doc5.pdf::p33::c3000 | score=-3.432] Inspected the company's Cryptography Policy to determine that the company restricts privileged access to encryption keys to authorized users with a business need. No exceptions noted.
+> [TEXT | doc4.pdf::p28::c0 | score=-3.856] 28 path, size, and frequency of access as well regulations, compliance or ad
+> Images: ['img1.png', 'img2.png', 'img10.png']
 
 ![Answer Screenshot](screenshots/screenshot2.png)
 *(Screenshot 2: Generated Answer)*
