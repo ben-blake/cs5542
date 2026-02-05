@@ -68,7 +68,7 @@ We implemented a Full-Stack Multimodal RAG pipeline with the following component
 
 ## 4. Evidence & Answers
 
-![Retrieval Screenshot](screenshot1.png)
+![Retrieval Screenshot](screenshots/screenshot1.png)
 *(Screenshot 1: Retrieval output showing text and image evidence)*
 
 ### Query 1 Example
@@ -82,7 +82,7 @@ We implemented a Full-Stack Multimodal RAG pipeline with the following component
 > [TEXT | doc3.pdf::p16 | score=1.854] Preparing to create and use Organizational Profiles involves gathering information about organizational priorities, resources, and risk direction from executives.
 > [IMAGE | img1.png | score=2.103] caption=img1
 
-![Answer Screenshot](screenshot2.png)
+![Answer Screenshot](screenshots/screenshot2.png)
 *(Screenshot 2: Generated Answer)*
 
 ## 5. Reflection & Failure Analysis
