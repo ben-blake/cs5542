@@ -33,38 +33,38 @@ We implemented a Full-Stack Multimodal RAG pipeline with the following component
 
 ## 3. Results Table
 
-| Query | Method | Chunking | P@5 | P@10 | Faithfulness |
+| Query | Method | Chunking | P@5 | R@10 | Faithfulness |
 |-------|--------|----------|-----|------|--------------|
-| Q1 | sparse | page | 0.4 | 0.2 | 0.67 |
-| Q1 | bm25 | page | 1.0 | 0.5 | 0.67 |
-| Q1 | dense | page | 0.4 | 0.2 | 0.67 |
-| Q1 | hybrid | page | 0.2 | 0.1 | 0.67 |
-| Q1 | hybrid_rerank | page | 0.2 | 0.1 | 0.67 |
-| Q1 | sparse | fixed | 0.4 | 0.2 | 0.67 |
-| Q1 | bm25 | fixed | 0.8 | 0.4 | 0.67 |
-| Q1 | dense | fixed | 0.2 | 0.1 | 0.67 |
-| Q1 | hybrid | fixed | 0.2 | 0.1 | 0.67 |
-| Q1 | hybrid_rerank | fixed | 0.2 | 0.1 | 0.67 |
-| Q2 | sparse | page | 0.6 | 0.3 | 0.33 |
-| Q2 | bm25 | page | 0.6 | 0.3 | 0.33 |
-| Q2 | dense | page | 0.2 | 0.1 | 0.33 |
-| Q2 | hybrid | page | 0.2 | 0.1 | 0.33 |
-| Q2 | hybrid_rerank | page | 0.2 | 0.1 | 0.33 |
-| Q2 | sparse | fixed | 0.8 | 0.4 | 0.33 |
-| Q2 | bm25 | fixed | 0.6 | 0.3 | 0.33 |
-| Q2 | dense | fixed | 0.4 | 0.2 | 0.33 |
-| Q2 | hybrid | fixed | 0.6 | 0.3 | 0.33 |
-| Q2 | hybrid_rerank | fixed | 0.6 | 0.3 | 0.33 |
-| Q3 | sparse | page | 0.2 | 0.1 | 1.00 |
-| Q3 | bm25 | page | 0.2 | 0.1 | 1.00 |
-| Q3 | dense | page | 0.2 | 0.1 | 1.00 |
-| Q3 | hybrid | page | 0.2 | 0.1 | 1.00 |
-| Q3 | hybrid_rerank | page | 0.2 | 0.1 | 1.00 |
-| Q3 | sparse | fixed | 0.2 | 0.1 | 1.00 |
-| Q3 | bm25 | fixed | 0.0 | 0.0 | 1.00 |
-| Q3 | dense | fixed | 0.2 | 0.1 | 1.00 |
-| Q3 | hybrid | fixed | 0.2 | 0.1 | 1.00 |
-| Q3 | hybrid_rerank | fixed | 0.2 | 0.1 | 1.00 |
+| Q1 | sparse | page | 0.40 | 0.67 | 0.67 |
+| Q1 | bm25 | page | 1.00 | 0.67 | 0.67 |
+| Q1 | dense | page | 0.40 | 0.33 | 0.67 |
+| Q1 | hybrid | page | 0.20 | 0.33 | 0.67 |
+| Q1 | hybrid_rerank | page | 0.20 | 0.33 | 0.67 |
+| Q1 | sparse | fixed | 0.40 | 0.67 | 0.67 |
+| Q1 | bm25 | fixed | 0.80 | 0.67 | 0.67 |
+| Q1 | dense | fixed | 0.20 | 0.33 | 0.67 |
+| Q1 | hybrid | fixed | 0.20 | 0.33 | 0.67 |
+| Q1 | hybrid_rerank | fixed | 0.20 | 0.33 | 0.67 |
+| Q2 | sparse | page | 0.60 | 0.33 | 0.33 |
+| Q2 | bm25 | page | 0.60 | 0.33 | 0.33 |
+| Q2 | dense | page | 0.20 | 0.33 | 0.33 |
+| Q2 | hybrid | page | 0.20 | 0.33 | 0.33 |
+| Q2 | hybrid_rerank | page | 0.20 | 0.33 | 0.33 |
+| Q2 | sparse | fixed | 0.80 | 0.33 | 0.33 |
+| Q2 | bm25 | fixed | 0.60 | 0.33 | 0.33 |
+| Q2 | dense | fixed | 0.40 | 0.33 | 0.33 |
+| Q2 | hybrid | fixed | 0.60 | 0.33 | 0.33 |
+| Q2 | hybrid_rerank | fixed | 0.60 | 0.33 | 0.33 |
+| Q3 | sparse | page | 0.20 | 0.33 | 1.00 |
+| Q3 | bm25 | page | 0.20 | 0.33 | 1.00 |
+| Q3 | dense | page | 0.20 | 0.33 | 1.00 |
+| Q3 | hybrid | page | 0.20 | 0.33 | 1.00 |
+| Q3 | hybrid_rerank | page | 0.20 | 0.33 | 1.00 |
+| Q3 | sparse | fixed | 0.20 | 0.33 | 1.00 |
+| Q3 | bm25 | fixed | 0.00 | 0.00 | 1.00 |
+| Q3 | dense | fixed | 0.20 | 0.33 | 1.00 |
+| Q3 | hybrid | fixed | 0.20 | 0.33 | 1.00 |
+| Q3 | hybrid_rerank | fixed | 0.20 | 0.33 | 1.00 |
 
 ## 4. Evidence & Answers
 
